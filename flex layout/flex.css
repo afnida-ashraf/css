@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    
+    height: 1000px;
+    /* width: 1000px; */
+    border: 20px solid grey;
+    /* by default flex direction is row  */
+    display: flex; 
+    /* flex-direction: row;  */
+    /* justify-content: space-between;  */
+     /*make space between each box  */
+     /* justify-content: space-evenly; */
+     /* justify-content: center;
+     align-items: center; */
+     /* flex-direction: column; */
+     /* justify-content: space-evenly; */
+     /* align-items: center; */
+     /* flex-wrap: wrap;
+     align-content:flex-start ; */
+     /* flex-wrap followd by align-content */
+     /* flext wrap anf align -content can be use together by flex-flow */
+     /* flex-flow: row wrap; */
+     flex-wrap: wrap;
+     align-content: flex-start;
+     align-content: flex-start;
+
+}
+
+
+.child1{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    border: 2px solid white;
+    /* flex property order by default is zero */
+    /* order: 4; */
+    flex-grow: 3;
+}       
+/* Mouse over the div element below to change its background color:*/
+    .child1:hover{
+        background-color: brown;
+    }        
+
+.child2{
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    border: 2px solid white;
+    /* order: 3; */
+    /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+    flex-grow: 1;
+
+}
+
+.child2:hover{
+    background-color:red ;
+}
+
+
+.child3{
+    height: 100px;
+    width: 100px;
+    background-color: darkolivegreen;
+    border: 2px solid white;
+    /* order: 2; */
+    flex-grow: 2;
+
+}
+.child3:hover{
+    background-color: yellow;
+}
+
+
+
+.child4{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    border: 2px solid white;
+    /* order: 1; */
+    flex-grow: 2;
+
+}
+
+.child4:hover{
+    background-color: tomato;
+}
